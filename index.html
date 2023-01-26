@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+            integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" 
+            crossorigin="anonymous">
+        </script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <title>Notify</title>
+        <link rel="shortcut icon" href="./img/gato.webp" type="image/x-icon">
+    </head>
+    <body>
+        <div class="main">
+            <div class="buttons">
+                <button onclick="notSucesso()" class="b1 bb">Notify Sucesso</button>
+                <button onclick="notAviso()" class="b2 bb">Notify Aviso</button>
+                <button onclick="notErro()" class="b3 bb">Notify Erro</button>
+            </div>
+            <div class="notify"> 
+                <div class="notText">
+                    <p class="titleNot"></p>
+                    <p class="textNot"></p>
+                </div>
+                <div class="notIcons">
+                    <ion-icon class="suNot pdIcon" name="checkmark-circle-outline"></ion-icon>
+                    <ion-icon class="alNot pdIcon" name="alert-circle-outline"></ion-icon>
+                    <ion-icon class="erNot pdIcon" name="close-circle-outline"></ion-icon>
+                </div>
+            </div>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;600;700&display=swap');
+
+::-webkit-scrollbar-thumb {
+  background-color: #333333;
+  border-radius: 0.6vh;
+}
+
+::-webkit-scrollbar {
+  background: transparent;
+  height: 1vh;
+  position: absolute;
+  width: 1vh;
+  background-color: #000000;
+}
+
+* {
+  border: none;
+  box-shadow: none;
+  box-sizing: border-box;
+  font-style: normal;
+  font-family: 'Montserrat';
+  margin: 0;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  list-style: none;
+  letter-spacing: 0.05vh;
+  resize: none;
+  outline: none;
+  border: 0;
+  user-select: none;
+  color: black;
+  scroll-behavior: smooth;
+}
+/* main */
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+/* botões */
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 50%;
+  height: 25%;
+}
+.bb {
+  font-size: 1.5vw;
+  font-weight: 600;
+  padding: 5px;
+  margin: 1%;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 5px;
+}
+.bb:hover {
+  border: 2px solid #111;
+  filter: drop-shadow(0px 0px 5px rgba(17, 17, 17, 0.377));
+}
+.b1:hover {
+  color: green;
+}
+.b2:hover {
+  color: rgb(255, 208, 0);
+}
+.b3:hover {
+  color: rgb(199, 0, 0);
+}
+
+/* notify */
+.notify {
+  z-index: 1;
+  position: fixed;
+  display: none;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  height: auto;
+  width: auto;
+  padding: 1%;
+  background-color: rgb(0, 0, 0, 0.5);
+  border-radius: 5px;
+  margin-bottom: 35%;
+  border-bottom: 4px solid rgb(9, 255, 0);
+}
+.notText {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2%;
+  width: auto;
+  min-width: 15vw;
+  height: auto;
+}
+.titleNot {
+  font-size: 1.5vw;
+  font-weight: 700;
+}
+.textNot {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  font-weight: 500;
+}
+.pdIcon {
+  display: none;
+  font-size: 4vw;
+}
+.suNot {
+  color: rgb(0, 255, 0);
+  filter: drop-shadow(0px 0px 5px rgb(0, 255, 0, 0.5));
+}
+.alNot {
+  color: rgb(255, 208, 0);
+  filter: drop-shadow(0px 0px 5px rgb(255, 208, 0, 0.5));
+}
+.erNot {
+  color: red;
+  filter: drop-shadow(0px 0px 5px rgb(255, 0, 0, 0.5));
+}
+.sumir {
+  display: none;
+}
